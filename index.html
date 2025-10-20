@@ -4,113 +4,386 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meus objetivos do ano</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <title>Meu portfólio</title>
 </head>
 
 <body>
-    <section class="conteudo-principal">
-        <h2 class="titulo-principal">Meus objetivos do ano<span>_</span></h2>
-        <div class="conteudo">
-            <div class="botoes">
-                <button class="botao ativo">Cursos na Alura</button>
-                <button class="botao">Criar projetos em Javascript</button>
-                <button class="botao">Criar um portfolio</button>
-                <button class="botao">Atualizar meu currículo</button>
+    <header class="container text-center">
+        <img src="img/menina.avif" alt="avatar da Fernanda" class="rounded-circle" width="150" height="150"
+            srcset="">
+    <p class="lead"></p> Eu sou Maria_</p>
+    <h1>Eu estudo Programação</h1>
+    <p>
+        Sou estudante do colégio estadual Basílio de Lucca e estudo pensamento 
+        computacional no Ensino Médio. Desenvolvemos projetos usando HTML, CSS 
+        e JavaScript. Veja os projetos que já desenvolvi!</p>
+    <p>Minhas habilidades</p>
+        <div>
+            <p class="badge bg-secondary">HTML</p>
+            <p class="badge bg-secondary">CSS</p>
+            <p class="badge bg-secondary">JavaScript</p>
+            <p class="badge bg-secondary">Scratch</p>
+        </div>
+    </header>
+    <main class="container mt-5">
+        <h2>Meus projetos</h2>
+        <div class="row">
+           
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/agrinho.png" class="card-img-top" alt="Imagem do projeto agrinho">
+                    <div class="card-body">
+                        <h5 class="card-title">Concurso Agrinho de Programação - 2024</h5>
+                        <p class="card-text">Este projeto é uma página web que apresenta textos e informações a respeito 
+                            da agricultura no Paraná e a modernização desse setor conforme os anos. A página é estilizada com 
+                            CSS para uma visualização agradável e usa fontes externas do Google Fonts </p>
+                        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal1">Veja
+                            o projeto</button>
+                    </div>
+                </div>
             </div>
-            <div class="abas-textos">
-                <div class="aba-conteudo ativo">
-                    <h3 class="aba-conteudo-titulo-principal">Estudar 4 cursos na Alura</h3>
-                    <h4 class="aba-conteudo-titulo-secundario">Tempo para completar o objetivo</h4>
-                    <div class="contador">
-                        <div class="contador-digito">
-                            <p class="contador-digito-numero" id="dias0"></p>
-                            <p class="contador-digito-texto">dias</p>
-                        </div>
-                        <div class="contador-digito">
-                            <p class="contador-digito-numero" id="horas0"></p>
-                            <p class="contador-digito-texto">horas</p>
-                        </div>
-                        <div class="contador-digito">
-                            <p class="contador-digito-numero" id="min0"></p>
-                            <p class="contador-digito-texto">min</p>
-                        </div>
-                        <div class="contador-digito">
-                            <p class="contador-digito-numero" id="seg0"></p>
-                            <p class="contador-digito-texto">seg</p>
-                        </div>
+
+            <!-- Projeto 2 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/Turma.png" class="card-img-top" alt="Imagem do projeto da turma">
+                    <div class="card-body">
+                        <h5 class="card-title">Página web: utilizando HTML e CSS para construir um site criativo</h5>
+                        <p class="card-text">Este projeto teve como objetivo interativo apresentar os estudantes de uma
+                             turma de maneira moderna, criativa e dinâmica. A página é estilizada com CSS, utiliza a 
+                             linguagem HTML e apresenta recursos do Figma para ilustração e personalização. </p>
+                        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal2">Veja
+                            o projeto</button>
                     </div>
                 </div>
-                <div class="aba-conteudo">
-                    <h3 class="aba-conteudo-titulo-principal">Criar 5 projetos em Javascript</h3>
-                    <h4 class="aba-conteudo-titulo-secundario">Tempo para completar o objetivo</h4>
-                    <div class="contador">
-                        <div class="contador-digito">
-                            <p class="contador-digito-numero" id="dias1"></p>
-                            <p class="contador-digito-texto">dias</p>
-                        </div>
-                        <div class="contador-digito">
-                            <p class="contador-digito-numero" id="horas1"></p>
-                            <p class="contador-digito-texto">horas</p>
-                        </div>
-                        <div class="contador-digito">
-                            <p class="contador-digito-numero" id="min1"></p>
-                            <p class="contador-digito-texto">min</p>
-                        </div>
-                        <div class="contador-digito">
-                            <p class="contador-digito-numero" id="seg1"></p>
-                            <p class="contador-digito-texto">seg</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="aba-conteudo">
-                    <h3 class="aba-conteudo-titulo-principal">Criar um portfolio com os meus 3 melhores projetos</h3>
-                    <h4 class="aba-conteudo-titulo-secundario">Tempo para completar o objetivo</h4>
-                    <div class="contador">
-                        <div class="contador-digito">
-                            <p class="contador-digito-numero" id="dias2"></p>
-                            <p class="contador-digito-texto">dias</p>
-                        </div>
-                        <div class="contador-digito">
-                            <p class="contador-digito-numero" id="horas2"></p>
-                            <p class="contador-digito-texto">horas</p>
-                        </div>
-                        <div class="contador-digito">
-                            <p class="contador-digito-numero" id="min2"></p>
-                            <p class="contador-digito-texto">min</p>
-                        </div>
-                        <div class="contador-digito">
-                            <p class="contador-digito-numero" id="seg2"></p>
-                            <p class="contador-digito-texto">seg</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="aba-conteudo">
-                    <h3 class="aba-conteudo-titulo-principal">Atualizar meu curriculo com os certificados da Alura</h3>
-                    <h4 class="aba-conteudo-titulo-secundario">Tempo para completar o objetivo</h4>
-                    <div class="contador">
-                        <div class="contador-digito">
-                            <p class="contador-digito-numero" id="dias3"></p>
-                            <p class="contador-digito-texto">dias</p>
-                        </div>
-                        <div class="contador-digito">
-                            <p class="contador-digito-numero" id="horas3"></p>
-                            <p class="contador-digito-texto">horas</p>
-                        </div>
-                        <div class="contador-digito">
-                            <p class="contador-digito-numero" id="min3"></p>
-                            <p class="contador-digito-texto">min</p>
-                        </div>
-                        <div class="contador-digito">
-                            <p class="contador-digito-numero" id="seg3"></p>
-                            <p class="contador-digito-texto">seg</p>
-                        </div>
-                    </div>
+            </div>
+
+           <!-- Projeto 3 -->
+           <div class="col-md-4">
+            <div class="card">
+                <img src="img/Flashcard.png" class="card-img-top" alt="Imagem do projeto Flashcard">
+                <div class="card-body">
+                    <h5 class="card-title">Flashcard: utilizando HTML e CSS para estudar de forma mais criativa                    </h5>
+                    <p class="card-text">Este projeto  cria uma experiência interativa educativa utilizando
+                        a técnica do Flashcard, que tem como objetivo treinar a memória e tornar os estudos mais
+                        práticos e funcionais. É estilizada com CSS, e utiliza a linguagem HTML. </p>
+                    <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal2">Veja
+                        o projeto</button>
                 </div>
             </div>
         </div>
-    </section>
-    <script src="main.js"></script>
+
+        <!-- Projeto 4 -->
+<div class="col-md-4">
+    <div class="card">
+        <img src="img/senha.png" class="card-img-top" alt="Imagem do novo projeto">
+        <div class="card-body">
+            <h5 class="card-title">Gerador de senhas</h5>
+            <p class="card-text">Este projeto tem como objetivo apresentar uma ferramenta interativa para gerar senhas 
+                de forma prática e segura. A página é estilizada com CSS, utiliza HTML para estruturação e conta com 
+                JavaScript para a geração e avaliação da senha gerada, oferecendo uma experiência moderna e funcional.</p>
+            <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal4">Veja o projeto</button>
+        </div>
+    </div>
+</div>
+
+ <!-- Projeto 5 -->
+ <div class="col-md-4">
+    <div class="card">
+        <img src="img/ia.png" class="card-img-top" alt="Imagem do projeto IA">
+        <div class="card-body">
+            <h5 class="card-title">Funções: criando uma missão sobre Inteligência Artificial                    </h5>
+            <p class="card-text">Este projeto tem como objetivo criar uma missão interativa sobre Inteligência Artificial.
+                 A página usa HTML para estruturar o conteúdo, é estilizada com CSS e utiliza JavaScript para manipular o 
+                 DOM e gerar interações, oferecendo uma experiência dinâmica e educativa. </p>
+            <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal2">Veja
+                o projeto</button>
+        </div>
+    </div>
+</div>
+
+<!-- Projeto 6 -->
+<div class="col-md-4">
+    <div class="card">
+        <img src="img/pyton.png" class="card-img-top" alt="Imagem do projeto IA">
+        <div class="card-body">
+            <h5 class="card-title">Introdução a python: desafios de programação                    </h5>
+            <p class="card-text">Este projeto tem como objetivo oferecer uma ferramenta interativa para resolver 
+                desafios de programação em Python. A página é estruturada com HTML, estilizada com CSS e utiliza 
+                Python para a execução dos códigos e avaliação dos resultados, proporcionando uma experiência prática. </p>
+            <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal2">Veja
+                o projeto</button>
+        </div>
+    </div>
+</div>
+
+<!-- Projeto 6 -->
+<div class="col-md-4">
+    <div class="card">
+        <img src="img/pyton.png" class="card-img-top" alt="Imagem do projeto IA">
+        <div class="card-body">
+            <h5 class="card-title">Introdução a python: desafios de programação                    </h5>
+            <p class="card-text">Este projeto tem como objetivo apresentar uma ferramenta interativa para realizar 
+                análise de dados de maneira simples e eficaz. A página é estruturada com HTML, estilizada com CSS e 
+                utiliza JavaScript para gerar gráficos e avaliar os dados, oferecendo uma experiência dinâmica e informativa. </p>
+            <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal2">Veja
+                o projeto</button>
+        </div>
+    </div>
+</div>
+
+    </main>
+
+    <div class="modal" id="modal1" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Projeto Agrinho</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>O Projeto Agrinho é uma iniciativa promovida pelo Sistema FAEP/SENAR-PR (Federação da 
+                        Agricultura do Estado do Paraná e Serviço Nacional de Aprendizagem Rural) voltada para a 
+                        educação e o desenvolvimento social e ambiental nas áreas rurais do estado do Paraná. O 
+                        objetivo principal é levar informações sobre cidadania, saúde, meio ambiente e qualidade de 
+                        vida para alunos e comunidades rurais, por meio de atividades pedagógicas e concursos.</p>
+                    <p>A estrutura do site é baseada em HTML, que define a semântica e o layout do conteúdo,
+                        enquanto o CSS é usado para estilizar a página visualmente, incluindo cores, tipografia e a
+                        disposição dos elementos.</p>
+                    <p>O CSS personaliza o visual do site, usando variáveis para cores, estilizando o texto com uma
+                        fonte importada do Google Fonts e aplicando um esquema de cores suaves e botões interativos.
+                        O uso de HTML e CSS é importante pois assim é possível criar um site acessível e
+                        esteticamente agradável.</p>
+                    <img src="img/agrinho2.jpg" alt="Imagem representativa do projeto agrinho">
+                </div>
+                <div class="modal-footer">
+                    <a href="https://femascheti.github.io/minhas-leituras/">Ver projeto ao vivo</a>
+                    <a href="https://github.com/femascheti/minhas-leituras">Ver código do projeto</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="modal2" tabindex="-2">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Projeto de segurança</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>OEste projeto é uma ferramenta interativa desenvolvida para gerar senhas de forma prática e segura.
+                        O site permite que os usuários escolham o número de caracteres desejado, e ao clicar em um botão, 
+                        uma senha aleatória é gerada instantaneamente. Além disso, a plataforma oferece uma funcionalidade
+                        de avaliação, onde os usuários podem verificar a segurança da senha gerada, entendendo o nível de 
+                        complexidade e robustez de suas escolhas.</p>
+                    <p>AA estrutura do site é construída em HTML, que define a organização do conteúdo, enquanto o CSS é utilizado 
+                        para dar forma ao design, incluindo cores, tipografia e o layout responsivo, garantindo uma experiência de 
+                        navegação agradável e funcional. A interação com os elementos do site é feita com JavaScript, que manipula 
+                        o DOM para gerar senhas aleatórias, alterar o número de caracteres e avaliar a força da senha em tempo real.</p>
+                    <img src="img/turma2.png" alt="Imagem representativa do projeto turma">
+                </div>
+                <div class="modal-footer">
+                    <a href="https://femascheti.github.io/minhas-leituras/">Ver projeto ao vivo</a>
+                    <a href="https://github.com/femascheti/minhas-leituras">Ver código do projeto</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="modal3" tabindex="-3">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Projeto Flashcard</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>O Projeto Flashcards tem como oobjetivo auxiliar nos estudos, os tornando mais práticos, 
+                        os flashcards são cartões que servem para testar sua memória. De um lado, eles possuem perguntas,
+                         e do outro, as respostas. É possível variar também, com tópicos e palavras-chave 
+                        ou termos e definições</p>
+                    <p>A estrutura do site é baseada em HTML, que define a semântica e o layout do conteúdo,
+                        enquanto o CSS é usado para estilizar a página visualmente, incluindo cores, tipografia e a
+                        disposição dos elementos.</p>
+                    <p>O CSS personaliza o visual do site, usando variáveis para cores, estilizando o texto com uma
+                        fonte importada do Google Fonts e aplicando um esquema de cores suaves e botões interativos.
+                        O uso de HTML e CSS é importante pois assim é possível criar um site acessível e
+                        esteticamente agradável.</p>
+                    <img src="img/turma2.png" alt="Imagem representativa do projeto turma">
+                </div>
+                <div class="modal-footer">
+                    <a href="https://femascheti.github.io/minhas-leituras/">Ver projeto ao vivo</a>
+                    <a href="https://github.com/femascheti/minhas-leituras">Ver código do projeto</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modal 4 -->
+<div class="modal" id="modal4" tabindex="-4">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Meu Novo Projeto</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Este projeto tem como objetivo fornecer uma ferramenta interativa para gerar senhas de 
+                    maneira prática e segura. O site permite que os usuários escolham o número de caracteres 
+                    desejado e, ao clicar em um botão, uma senha aleatória é gerada instantaneamente.
+                    
+                    <p>Além disso, a plataforma oferece uma função de avaliação, onde os usuários podem analisar a 
+                    segurança da senha gerada, entendendo o nível de complexidade e robustez da sua escolha. 
+                    A estrutura do site é feita em HTML, que organiza e apresenta o conteúdo de forma clara, 
+                     enquanto o CSS é utilizado para criar o design visual, com cores, tipografia e layout 
+                     responsivo, garantindo uma experiência agradável. 
+                     <p>A interação é realizada por meio de 
+                     JavaScript, que permite gerar senhas aleatórias, alterar o número de caracteres e avaliar 
+                     a força da senha em tempo real, oferecendo uma experiência prática e segura.</p>
+                <img src="img/novo-projeto-detail.jpg" alt="Imagem do projeto detalhado">
+            </div>
+            <div class="modal-footer">
+                <a href="https://seulinkdoprojeto.com">Ver projeto ao vivo</a>
+                <a href="https://github.com/seulinkdocodigo">Ver código do projeto</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <!-- Modal 5 -->
+    <div class="modal" id="modal5" tabindex="-5">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Inteligência Artificial</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Este projeto tem como objetivo criar uma missão interativa sobre Inteligência Artificial, 
+                        proporcionando uma experiência educativa e dinâmica. A página permite aos usuários 
+                        explorar conceitos e exemplos de IA de forma envolvente, utilizando uma lista de objetos 
+                        criada em JavaScript. Funções são aplicadas para dividir problemas complexos em tarefas 
+                        menores, facilitando a compreensão e a interação com os dados.
+
+                    <p>A estrutura do site é construída em HTML, organizando o conteúdo de maneira clara e acessível, 
+                        enquanto o CSS define o design visual, com layout responsivo, cores e tipografia atrativas. 
+                        A manipulação do DOM é feita com métodos de JavaScript, permitindo interações como a criação 
+                        de listas, divisão de tarefas e exibição de conteúdo em tempo real. O projeto também convida 
+                        os usuários a refletirem sobre o uso de IA em suas tarefas diárias, integrando aprendizado e prática.</p>
+                    <img src="img/novo-projeto-detail.jpg" alt="Imagem do projeto detalhado">
+                </div>
+                <div class="modal-footer">
+                    <a href="https://seulinkdoprojeto.com">Ver projeto ao vivo</a>
+                    <a href="https://github.com/seulinkdocodigo">Ver código do projeto</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <!-- Modal 5 -->
+     <div class="modal" id="modal6" tabindex="-6">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Introdução a python: desafios de programação</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Este projeto tem como objetivo proporcionar uma introdução prática à programação em Python, 
+                        abordando desafios que ajudam a desenvolver habilidades essenciais. O site permite que os 
+                        usuários resolvam problemas computacionais simples, utilizando variáveis, operadores 
+                        matemáticos e estruturas condicionais. Além disso, a plataforma oferece uma função para 
+                        avaliar as soluções dos usuários, ajudando a identificar os melhores métodos para resolver
+                         problemas de forma eficiente.
+
+                         <p>A estrutura do site é construída em HTML, organizando o conteúdo de maneira clara e acessível. 
+                        O CSS é utilizado para criar o design visual, com cores, tipografia e layout responsivo, 
+                        garantindo uma boa experiência de navegação. A interação é realizada com Python, permitindo 
+                        que os usuários pratiquem a criação de variáveis, funções modulares e estruturas lógicas para 
+                        resolver desafios de programação, promovendo aprendizado e eficiência no desenvolvimento de 
+                        soluções computacionais.</p>
+                    <img src="img/novo-projeto-detail.jpg" alt="Imagem do projeto detalhado">
+                </div>
+                <div class="modal-footer">
+                    <a href="https://seulinkdoprojeto.com">Ver projeto ao vivo</a>
+                    <a href="https://github.com/seulinkdocodigo">Ver código do projeto</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modal 6 -->
+    <div class="modal" id="modal6" tabindex="-6">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Introdução a python: desafios de programação</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Este projeto tem como objetivo apresentar uma ferramenta interativa para realizar análise 
+                        exploratória de dados de forma prática e eficiente. O site permite que os usuários carreguem 
+                        dados e, ao clicar em um botão, visualizem gráficos e estatísticas sobre as informações, 
+                        ajudando a compreender as variações e padrões dos dados. Além disso, a plataforma oferece 
+                        uma função de análise preditiva, onde os usuários podem verificar tendências e fazer previsões
+                         com base nas informações exploradas.
+
+                         <p>A estrutura do site é construída em HTML, que organiza e apresenta o conteúdo de maneira clara, 
+                        enquanto o CSS é utilizado para criar o design visual, com gráficos, tipografia e layout responsivo, 
+                        garantindo uma navegação confortável. A interação é realizada por meio de JavaScript, que manipula os
+                         dados em tempo real, permitindo visualizações dinâmicas e interativas, proporcionando uma experiência
+                          prática e educativa.</p>
+                    <img src="img/novo-projeto-detail.jpg" alt="Imagem do projeto detalhado">
+                </div>
+                <div class="modal-footer">
+                    <a href="https://seulinkdoprojeto.com">Ver projeto ao vivo</a>
+                    <a href="https://github.com/seulinkdocodigo">Ver código do projeto</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <footer class="container py-5">
+        <h2>Entre em contato</h2>
+        <div>
+            <a href="https://github.com/femascheti">GitHub</a>
+        </div>
+        <p class="my-5 text-center">© Copyright 2024. Produzido por Fernanda Mascheti</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
+<button
+  type="button"
+  class="btn btn-link"
+  data-bs-toggle="modal"
+  data-bs-target="#modal1"
+>
+  Veja o projeto
+</button>
+
+<button
+  type="button"
+  class="btn btn-link"
+  data-bs-toggle="modal"
+  data-bs-target="#modal2"
+>
+  Veja o projeto
+</button>
+
+<button
+  type="button"
+  class="btn btn-link"
+  data-bs-toggle="modal"
+  data-bs-target="#modal3"
+>
+  Veja o projeto
+</button>
 
 </html>
